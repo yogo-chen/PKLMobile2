@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    repositories {
+        maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
+    }
 }
 
 dependencies {
@@ -26,4 +29,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.2'
 }
